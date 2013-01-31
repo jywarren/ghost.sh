@@ -1,0 +1,23 @@
+##Ghosting in JS
+
+* copy the contents of inside.sh to /var/root/ on the js vm
+* chmod 777 inside.sh
+* run this: 'watch -n 2 /var/root/inside.sh'
+* use run() in JS to run shit in the jsvm
+
+###Resurrect
+
+uuencode -m hello.txt hello.b64 > /dev/clipboard
+
+* then run resurrect() in jsvm
+
+it produced...
+
+begin-base64 644 hello.b64
+LyogVGhpcyBDIHNvdXJjZSBjYW4gYmUgY29tcGlsZWQgd2l0aDoKCiAgIHRj
+YyAtbyBoZWxsbyBoZWxsby5jCgogICBvciBpZiB5b3UgaGF2ZSBtb3JlIHRp
+bWU6CgogICBnY2MgLW8gaGVsbG8gaGVsbG8uYyAKKi8KI2luY2x1ZGUgPHN0
+ZGxpYi5oPgojaW5jbHVkZSA8c3RkaW8uaD4KCmludCBtYWluKGludCBhcmdj
+LCBjaGFyICoqYXJndikKewogICAgcHJpbnRmKCJIZWxsbyBXb3JsZFxuIik7
+CiAgICByZXR1cm4gMDsKfQo=
+====
